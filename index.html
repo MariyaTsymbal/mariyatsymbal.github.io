@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Mariya Tsymbal</title>
     <link rel="icon" type="img/ico" href="favicon.ico">
-
-   <link rel="stylesheet" href="stylesheets/styles.css">
-     <link rel="stylesheet" href="stylesheets/css/bootstrap.min.css">
+ <!--<link href="stylesheets/css/bootstrap.min.css" rel="stylesheet">
+-->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Exo|Tinos">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="stylesheets/styles.css">
+    
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  <header class="headerInfo">
+
+  <!--<header class="headerInfo" class="container-fluid">
     <div id="nameInfo">
       <p id="firstLine">Mariya Tsymbal</p>
       <span id="secondLine" >Developer</span>
@@ -23,50 +28,69 @@
       <a href="#projects"><span class="forlinks">Projects</span></a>
       <a href="#contact"><span class="forlinks">Contact</span></a>      
     </div>
+    -->
+    <header>
+    <div class="container-fluid"  id="nameInfo">
+    <div class="row-fluid">
+    <div class="col-sm-4 " class="text-center" >Mariya Tsymbal</br>Developer</div>
+    <div class="col-sm-2" class="text-center"><span class="forlinks"></br>Projects</span></div>
+    <div class="col-sm-2" class="text-center" ><span class="forlinks"></br>About</span></div>
+    <div class="col-sm-2" class="text-center" ><span class="forlinks"></br>Resume</span></div>
+    <div class="col-sm-2" class="text-center" ><span class="forlinks"></br>Contact</span></div>
+      </div>      
+    </div>
+      
+    </header>
     
-   </header>  
+    
 </head>
-<body id="body">
-  <div id="bodyDivInfo">
-  <p id="bodyInfo">
-  <h3>I am third year Computer Science student at York University. </h3>
-     </p>
+<body id="body" class="container">  
+<div class="flex-container" >
+<div class="flex-item" ><a href="http://mariyatsymbal.github.io/ttt/"><div class="center">Tic Tac Toe
+</div></a></div>
+<div class="flex-item"><div class="center">Coming soon</div></div>
+<div class="flex-item"><div class="center">Coming soon</div></div>
+<div class="flex-item"><div class="center">Coming soon</div></div>
+<div class="flex-item"><div class="center">Coming soon</div></div>
+<div class="flex-item"><div class="center">Coming soon</div></div>
+<div class="flex-item"><div class="center">Coming soon</div></div>
+<div class="flex-item"><div class="center">Coming soon</div></div>
+<div class="flex-item"><div class="center">Coming soon</div></div>
+<div class="flex-item"><div class="center">Coming soon</div></div>
+
+  
+</div>
+   <div class="about">
+      <h3> Once upon a time I decided to apply for Computer Science at York University...</br>
+      I always liked riddles and logic puzzles, so I thought that being a developer will allow me to keep solving those riddles. 
+      I am third year student now, and I think that I was right about Computer Science, except for one detail - you have to constantly improve yourself, there are so many ways to do the same task, some are better than the others. So now it's not about getting the right answer, but finding the better way of solving a problem. 
+       </h3>
+     <a id="resumePDF"href="Mariya_Tsymbal_Resume.pdf"  >View RESUME as .PDF</a>
   </div>
 
-  <section id = "resume">
-      <div class ="container">
-        <h2 class="section-heading">Resume</h2>
-      </div>
-      <div>
-        <h3 class = "resume-heading">Languages&Frameworks</h3>
-        <ul class="skills">
-          <li>JavaScript<span>Node.js, JQuery</span></li>
-          <li>Java</li>
-          <li>HTML5&CSS3 <span>BootStrap</span></li>
-          <li>MIPS,Verilog&C</li>
-          <li>MySQL</li>
-         </ul>
-         <h3 class = "resume-heading">Skills</h3>
-         <ul>
-          <li></li>
-         </ul>
-      </div>
-      <a class = "forlinks"id="resumePDF"href="Mariya_Tsymbal_Resume.pdf" >View resume as .PDF</a>
-  </section> 
-
-  <section id="projects">
-      <h2 class = "section-heading" >Projects</h2>
-
-  </section>   
-<footer class="w3-container" id="contact" >
   
-    <h2 class = "section-heading" >Contact</h2>
-    <a href="https://github.com/MariyaTsymbal"><img class="imgDist" src="rsz_1github.png"></a>
-    <a href="https://www.linkedin.com/in/mariya-tsymbal-97123baa?trk=hp-identity-name"><img class="imgDist" src="rsz_linkedin.png"></a>
-    <a href="https://plus.google.com/u/0/100004217836070753422/posts"><img class="imgDist" src="rsz_google-plus.png"></a>
+
+   
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    
+  </body>
+
+<footer >
+<h2 class = "section-heading" id="contact">Contact</h2>
+<div class="container-fluid">
+  <div class ="row">
+    <div class="col-sm-4"><a href="https://github.com/MariyaTsymbal"><img class="center-block" class="img-responsive" src="rsz_1github.png"></img></a></div>
+    <div class="col-sm-4"><a href="https://www.linkedin.com/in/mariya-tsymbal-97123baa?trk=hp-identity-name"><img class="center-block" class="img-responsive" src="rsz_linkedin.png"></img></a></div> 
+    <div class="col-sm-4"><a href="https://plus.google.com/u/0/100004217836070753422/posts"><img class="center-block" class="img-responsive" src="rsz_google-plus.png"></img></a></div>
+  </div>
+</div>
+  
+    
   
 </footer>
+
+</html>
  
 
-</body>
-</html>
+

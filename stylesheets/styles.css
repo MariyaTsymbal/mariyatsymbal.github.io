@@ -1,20 +1,61 @@
-.headerInfo
-{
-  margin: 0 auto;
-  width: 1000px;
+header{
+  padding-top: 50px;
 }
 body
 {
   background-image: url('stardust.png'); 
   font-family: 'Tinos', sans-serif;
   font-size: 20px;
-  margin: 0px;
+ /* margin: 0px;*/
+  color: #000000;
+}
+
+.flex-container{
+
+  display: -webkit-flex;
+  -webkit-flex-flow:row wrap; 
+  padding-top: 40px; 
+  justify-content:space-around;
+
+
+  
+}
+
+.flex-item{
+
+  flex-grow:1;
+  width: 250px;
+  height: 125px;
+  margin: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0.2px;
+
+
+}
+  
+  
+
+
+div.flex-item:hover{
+  /*background-color: #828282;*/
+  cursor: pointer;
+  background-color: #a6a6a6;
+  opacity: 0.2;
+}
+div.center{
+
+  position: relative;
+  padding: 2.2em 0.10em 0.10em 4.0em ;
+   
+ 
 }
 
 #nameInfo
 {
-  margin-top: 75px;
-  margin-left: 100px;
+  /*margin-top: 75px;
+  margin-left: 100px;*/
   font-family: 'Exo', sans-serif;
   font-size: 30px;
 }
@@ -32,22 +73,29 @@ span#secondLine
 span#home
 {
   margin-left: 175px;
+}
 
-
+#resumePDF{
+  font-size: 25px;
+  color: #000000;
 
 }
+#resumePDF:hover{
+color:#4BBBCC;
+  cursor: pointer;
+}
+
+
+
 
 .forlinks
 {
-  margin-left: 17px;
-  margin-right: 25px;
+
   font-size: 75%;
   color: #000000;
 
 }
 
-a:link
-{text-decoration: none;}
 
 
 .forlinks:hover
@@ -56,7 +104,12 @@ a:link
   cursor: pointer;
 }
 
-
+a{
+  color: #000;
+}
+a:hover{
+  text-decoration: none;
+}
 
 div#bodyDivInfo
 {
@@ -68,10 +121,18 @@ div#bodyDivInfo
   line-height: 150%;
 }
 
+h3
+{
+  text-align: justify;
+}
 div#resume
 {
   margin-top: 300px;
   margin-left: 150px; 
+}
+.resumeLink
+{
+  
 }
 p#resume
 {
@@ -79,22 +140,19 @@ p#resume
   font-size: 30px;
 }
 
-footer
+.footer1
 {
-  margin: 0 auto;
-  width: 1000px;
+  margin: 0em 0.1em 0em 0.1em;
+  
 }
-footer/a
-{
-  display: block;
-}
-.imgDist
-{
-  padding: 30px 95px 20px 100px;
 
-}
 .section-heading
 {
   text-align: center;
 
+}
+
+.about{
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
